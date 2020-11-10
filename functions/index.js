@@ -7,7 +7,6 @@ const app = express();
 
 const bbb = 'confrict by dev3'
 const getDataFromAPI = async keyword => {
-    // cloud functionsから実行する場合には地域の設定が必要になるため'country=JP'を追加している
     const requestUrl = 'https://www.googleapis.com/books/v1/volumes?country=JP&q=intitle:';
     const result = await requestPromise(`${requestUrl}${keyword}`);
     return result;
