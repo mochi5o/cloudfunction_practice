@@ -4,7 +4,10 @@ const express = require('express');
 const requestPromise = require('request-promise-native');
 
 const app = express();
+// const express = require('express');
+//　ここはコメントアウトですdev2
 
+// ここだってコメントだよねdev2
 // APIにリクエストを送る関数
 const getDataFromAPI = async keyword => {
     // cloud functionsから実行する場合には地域の設定が必要になるため'country=JP'を追加している
