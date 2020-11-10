@@ -1,11 +1,11 @@
 const functions = require('firebase-functions');
-const aaa='test with dev3';
+const aaa = 'test with dev3';
 const express = require('express');
 const requestPromise = require('request-promise-native');
 
 const app = express();
 
-// APIにリクエストを送る関数
+const bbb = 'confrict by dev3'
 const getDataFromAPI = async keyword => {
     // cloud functionsから実行する場合には地域の設定が必要になるため'country=JP'を追加している
     const requestUrl = 'https://www.googleapis.com/books/v1/volumes?country=JP&q=intitle:';
