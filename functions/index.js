@@ -5,7 +5,7 @@ const requestPromise = require('request-promise-native');
 
 const app = express();
 // const express = require('express');
-// const requestPromise = require('request-promise-native');
+//　ここはコメントアウトですdev2
 
 // const app = express();
 // APIにリクエストを送る関数
