@@ -1,14 +1,9 @@
 const functions = require('firebase-functions');
-const aaa = 'test with dev3';
 const express = require('express');
 const requestPromise = require('request-promise-native');
 
 const app = express();
-// const express = require('express');
-//　ここはコメントアウトですdev2
 
-// ここだってコメントだよねdev2
-// APIにリクエストを送る関数
 const getDataFromAPI = async keyword => {
     const requestUrl = 'https://www.googleapis.com/books/v1/volumes?country=JP&q=intitle:';
     const result = await requestPromise(`${requestUrl}${keyword}`);
