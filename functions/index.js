@@ -1,5 +1,5 @@
 const functions = require('firebase-functions');
-// Expressの読み込み
+// add commented here by dev1
 const express = require('express');
 const requestPromise = require('request-promise-native');
 
